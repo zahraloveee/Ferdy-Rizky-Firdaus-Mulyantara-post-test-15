@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resume — Ikki</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade {
+  opacity: 0;
+  animation: fadeIn 0.7s ease-out forwards;
+}
+
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --accent:#6ee7b7;
+      --muted:#94a3b8;
+      --glass: rgba(255,255,255,0.04);
+    }
+    *{box-sizing:border-box}
+    
+    body{
+  margin:0;
+  font-family:Inter, system-ui;
+  background: linear-gradient(180deg,#071226 0%, #071a2b 60%);
+  color:#e6eef8;
+  padding:32px;
+}
+    .resume{
+      width:100%;
+      max-width:980px;
+      background:linear-gradient(180deg,var(--card), rgba(11,18,32,0.9));
+      border-radius:16px;
+      box-shadow:0 8px 30px rgba(2,6,23,0.6);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 320px 1fr;
+    }
+    .side{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      padding:28px;
+      border-right:1px solid rgba(255,255,255,0.03);
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:center;
+      text-align:center;
+    }
+    .photo{
+      width:160px;
+      height:160px;
+      border-radius:14px;
+      overflow:hidden;
+      border:2px solid rgba(255,255,255,0.06);
+      box-shadow:0 6px 18px rgba(2,6,23,0.6);
+    }
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{font-family:'Space Grotesk';margin:8px 0 2px;font-size:22px}
+    .meta{color:var(--muted);font-size:13px}
+    .contacts{width:100%;margin-top:6px;display:flex;flex-direction:column;gap:8px}
+    .contacts a{display:inline-flex;align-items:center;gap:10px;padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--accent);background:rgba(110,231,183,0.04);border:1px solid rgba(110,231,183,0.06);font-weight:600}
+
+    main.content{padding:28px 32px;}
+    .headline{display:flex;align-items:flex-start;justify-content:space-between;gap:18px}
+    .summary{max-width:70%}
+    .summary p{margin:0;color:#cfe9ff}
+    .actions{display:flex;gap:10px}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;color:var(--accent);text-decoration:none;font-weight:600}
+
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+      margin-top:18px;
+    }
+    .card{background:rgba(255,255,255,0.01);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .card h3{margin:0 0 8px}
+
+    .video-wrap video{width:100%;height:200px;object-fit:cover;border-radius:10px}
+
+    @media (max-width:880px){
+      .resume{grid-template-columns:1fr}
+      main.content{padding:18px}
+      .headline{flex-direction:column}
+      .summary{max-width:100%}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <article class="resume">
+    <aside class="side">
+     <div class="photo">
+  <img src="Foto Ferdy .jpg.jpg" alt="Foto Ferdy">
+</div>
+      <header>
+        <h1>Ferdy Rizky Firdaus Mulyantara</h1>
+        <div class="meta">NIM: F3401241121 • Asal: Bandung/Jawa barat</div>
+      </header>
+
+      <div class="contacts">
+      <a href="https://www.linkedin.com/in/ferdy-mulyantara-5938b9323" target="_blank">LinkedIn</a>
+       <a href="https://instagram.com/ini_ferdy_loh" target="_blank">Instagram</a>
+      </div>
+
+    </aside>
+
+    <main class="content">
+      <div class="headline">
+        <div class="summary">
+          <h2>Tentang Saya</h2>
+          <p>Mahasiswa aktif IPB University dengan pengalaman di bidang komunikasi, event organizing, dan pengembangan
+konten digital. Terbiasa mengelola relasi dengan klien dan stakeholder sebagai humas maupun pelaksana
+lapangan dalam berbagai kegiatan. Mampu bekerja secara mandiri, disiplin, dan terbiasa menyusun strategi
+komunikasi serta konten kreatif yang sesuai dengan target audiens. Berkomitmen tinggi, adaptif, dan antusias
+dalam dunia media digital dan game.
+</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <section class="card">
+          <h3>Pendidikan</h3>
+         <p><strong>IPB University – Fakultas Teknologi Pertanian</strong><br>
+Program Studi Teknik Industri Pertanian (S1)<br>
+Bogor | 2023 – Sekarang</p>
+<ul>
+  <li>Minat pada sistem industri pertanian, manajemen proses, dan teknologi digital terapan.</li>
+  <li>Aktif dalam organisasi, event kampus, proyek freelance, dan kepanitiaan.</li>
+</ul>
+
+<p><strong>SMA Al-Muttaqin Tasikmalaya</strong><br>
+Tasikmalaya | 2021 – 2024</p>
+<ul>
+  <li>Berpartisipasi dalam kegiatan sekolah dan event regional.</li>
+</ul>
+
+<p><strong>SMP Al-Muttaqin Tasikmalaya</strong><br>
+Tasikmalaya | 2018 – 2021</p>
+<ul>
+  <li>Aktif dalam pengembangan minat dan bakat melalui ekstrakurikuler.</li>
+</ul>
+
+<p><strong>SDI Al-Jamal</strong><br>
+Tasikmalaya | 2012 – 2018</p>
+<ul>
+  <li>Memulai pendidikan dasar pada usia 6 tahun.</li>
+  <li>Mengikuti pembentukan karakter dan nilai keagamaan.</li>
+</ul>
+
+        </section>
+
+        <section class="card">
+          <h3>Pengalaman</h3>
+          <div class="list-item"> 
+  <div style="font-weight:700">Lotus Site – Jasa Joki Blox Fruits (Itemku) — Founder & Operator</div>
+  <div class="muted">Online (Remote) · 2024 – Sekarang</div>
+  <ul class="muted" style="margin-top:4px;">
+    <li>Mendirikan dan mengelola layanan joki Blox Fruits dengan brand Lotus Site melalui platform Itemku.</li>
+    <li>Menyelesaikan lebih dari 1000+ order dengan rating positif dari klien seluruh Indonesia dan luar negeri.</li>
+    <li>Bertanggung jawab dalam komunikasi, negosiasi, serta penyelesaian pesanan secara profesional.</li>
+    <li>Mengembangkan sistem layanan, penjadwalan order, dan menjaga keamanan akun pelanggan.</li>
+    <li>Membangun branding personal melalui tampilan toko, respon cepat, dan pelayanan yang ramah serta terpercaya.</li>
+    <li>Mengumpulkan feedback klien untuk meningkatkan kualitas layanan dan reputasi toko.</li>
+  </ul>
+</div>
+
+<div class="list-item">
+  <div style="font-weight:700">AIFEST Tasikmalaya — Divisi Logistik & Konsumsi</div>
+  <div class="muted">Tasikmalaya · 2023</div>
+  <ul class="muted" style="margin-top:4px;">
+    <li>Mengelola kebutuhan logistik dan konsumsi selama festival anime berskala komunitas.</li>
+    <li>Menyediakan dan mendistribusikan konsumsi untuk panitia, pengisi acara, dan tamu khusus.</li>
+    <li>Berkoordinasi dengan vendor makanan dan tim internal untuk kelancaran alur distribusi.</li>
+    <li>Membantu penataan logistik di awal dan akhir acara agar venue tetap kondusif.</li>
+  </ul>
+</div>
+
+<div class="list-item">
+  <div style="font-weight:700">INAGURASHI — Divisi Produksi (Sub Divisi Dekorasi)</div>
+  <div class="muted">Bogor · 2024</div>
+  <ul class="muted" style="margin-top:4px;">
+    <li>Merancang dan mengeksekusi konsep dekorasi konser kampus sesuai tema acara.</li>
+    <li>Bertanggung jawab dalam pengadaan dan pemasangan elemen dekorasi di venue.</li>
+    <li>Berkoordinasi dengan tim produksi dan teknis untuk memastikan dekorasi aman dan tepat waktu.</li>
+    <li>Mendukung estetika keseluruhan konser melalui pengaturan visual yang menarik dan tematik.</li>
+  </ul>
+</div>
+
+        </section>
+
+        <section class="card">
+          <h3>Pengalaman Organisasi</h3>
+          <div class="list-item">
+  <div style="font-weight:700">PKS (Polisi Keamanan Sekolah) – SMA Al-Muttaqin — Kepala Divisi Kedisiplinan</div>
+  <div class="muted">Tasikmalaya · 2022 – 2023</div>
+  <ul class="muted" style="margin-top:4px;">
+    <li>Memimpin divisi yang menjaga ketertiban, kedisiplinan, dan etika siswa di lingkungan sekolah.</li>
+    <li>Menyusun jadwal tugas, memberikan arahan, dan mengevaluasi kinerja anggota divisi secara berkala.</li>
+    <li>Berperan aktif menciptakan budaya disiplin yang positif dan edukatif antar siswa.</li>
+  </ul>
+</div>
+
+<div class="list-item">
+  <div style="font-weight:700">HIMALAYA IPB (Himpunan Mahasiswa Tasikmalaya IPB) — Anggota Divisi Eksternal</div>
+  <div class="muted">Bogor · 2024 – Sekarang</div>
+  <ul class="muted" style="margin-top:4px;">
+    <li>Merangkul mahasiswa baru asal Tasikmalaya agar saling mengenal, membangun solidaritas, dan merasa nyaman seperti keluarga.</li>
+    <li>Menginisiasi kegiatan pengenalan, kumpul rutin, dan diskusi informal antaranggota lintas angkatan.</li>
+    <li>Turut mempromosikan IPB ke sekolah-sekolah di Tasikmalaya sebagai bentuk kontribusi daerah.</li>
+  </ul>
+</div>
+
+<div class="list-item">
+  <div style="font-weight:700">MAX IPB (Music Agriculture X-pression) — Anggota Divisi Event Organizer</div>
+  <div class="muted">Bogor · 2024 – Sekarang</div>
+  <ul class="muted" style="margin-top:4px;">
+    <li>Terlibat dalam UKM seni berbasis musik yang mewadahi ekspresi dan kreativitas mahasiswa IPB.</li>
+    <li>Berkontribusi sebagai tim event organizer untuk showcase musik, pentas seni, dan workshop.</li>
+    <li>Membantu perencanaan, koordinasi teknis, logistik, publikasi, dan pengelolaan acara secara menyeluruh.</li>
+    <li>Berperan aktif membangun suasana kolektif dan kolaboratif antaranggota di bidang seni dan performa.</li>
+  </ul>
+</div>
+
+          <div class="video-wrap">
+            <video autoplay muted loop playsinline>
+              <source src="" type="video/mp4">
+            </video>
+          </div>
+        </section>
+
+        <section class="card">
+  <h3>Informasi Tambahan</h3>
+
+  <h4 style="margin-bottom:4px;">Hard Skill</h4>
+  <ul class="muted" style="margin-top:4px;">
+    <li>Microsoft Office</li>
+    <li>Google Workspace</li>
+    <li>Trello</li>
+    <li>Canva</li>
+    <li>Customer Service & Order Handling</li>
+    <li>Event Organizing</li>
+    <li>Notion</li>
+  </ul>
+
+  <h4 style="margin-top:12px; margin-bottom:4px;">Soft Skill</h4>
+  <ul class="muted" style="margin-top:4px;">
+    <li>Leadership</li>
+    <li>Public Speaking</li>
+    <li>Analisis</li>
+    <li>Penyelesaian Masalah</li>
+    <li>Teamwork</li>
+    <li>Manajemen Waktu</li>
+  </ul>
+</section>
+      </div>
+    </main>
+  </article>
+</body>
+</html>
